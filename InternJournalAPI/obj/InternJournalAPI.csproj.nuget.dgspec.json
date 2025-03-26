@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bennguyen/InternJournalAPI/InternJournalAPI.csproj": {}
+    "/Users/bennguyen/InternJournal/InternJournalAPI/InternJournalAPI.csproj": {}
   },
   "projects": {
-    "/Users/bennguyen/InternJournalAPI/InternJournalAPI.csproj": {
+    "/Users/bennguyen/InternJournal/InternJournalAPI/InternJournalAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bennguyen/InternJournalAPI/InternJournalAPI.csproj",
+        "projectUniqueName": "/Users/bennguyen/InternJournal/InternJournalAPI/InternJournalAPI.csproj",
         "projectName": "InternJournalAPI",
-        "projectPath": "/Users/bennguyen/InternJournalAPI/InternJournalAPI.csproj",
+        "projectPath": "/Users/bennguyen/InternJournal/InternJournalAPI/InternJournalAPI.csproj",
         "packagesPath": "/Users/bennguyen/.nuget/packages/",
-        "outputPath": "/Users/bennguyen/InternJournalAPI/obj/",
+        "outputPath": "/Users/bennguyen/InternJournal/InternJournalAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bennguyen/.nuget/NuGet/NuGet.Config"
@@ -45,6 +45,20 @@
           "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.3, )"
             },
