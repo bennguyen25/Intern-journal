@@ -52,6 +52,11 @@ namespace InternJournalAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<Entry>> CreateEntry([FromBody] Entry newEntry)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             newEntry.Date = DateTime.Now;
 
             _context.Entries.Add(newEntry);
@@ -64,6 +69,11 @@ namespace InternJournalAPI.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult<Entry>> UpdateEntry(int id, [FromBody] Entry updatedEntry)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var existingEntry = await _context.Entries.FindAsync(id);
 
             if (existingEntry == null)
