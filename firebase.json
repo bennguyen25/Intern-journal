@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/intern-journal-client",
+    "public": "InternJournalClient/dist/static/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
