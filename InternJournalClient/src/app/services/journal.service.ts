@@ -22,4 +22,16 @@ export class JournalService {
   getEntries(): Observable<JournalEntry[]> {
     return this.http.get<JournalEntry[]>(this.apiUrl);
   }
+
+  createEntry(entry: JournalEntry): Observable<JournalEntry> {
+    return this.http.post<JournalEntry>(this.apiUrl, entry);
+  }
+
+  updateEntry(entry: JournalEntry): Observable<JournalEntry> {
+    return this.http.put<JournalEntry>(`${this.apiUrl}/${entry.id}`, entry);
+  }
+
+  deleteEntry(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  }
 }

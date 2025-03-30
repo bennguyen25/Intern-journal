@@ -1,1 +1,13 @@
-<app-journal-list></app-journal-list>
+<label>
+    <input type="checkbox" [(ngModel)]="presentationMode" />
+    Presentation Mode
+  </label>
+  <br /><br />
+  <app-journal-form [editingEntry]="selectedEntry" (refreshList)="handleRefresh()"></app-journal-form>
+  <hr />
+  <app-journal-list 
+    [presentationMode]="presentationMode" 
+    (editEntry)="handleEdit($event)"
+    (refreshList)="handleRefresh()">
+  </app-journal-list>
+  
