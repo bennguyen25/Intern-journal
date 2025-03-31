@@ -4,6 +4,7 @@ A personal full-stack journaling app built to track reflections, tasks, and pers
 Developed as a spring break project using C#, ASP.NET Core, and Angular.
 
 Wanna check it out? Click [here!] (the-intern-journal.web.app)
+
 ---
 
 ## Project Goals
